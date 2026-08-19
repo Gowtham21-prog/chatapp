@@ -1,0 +1,257 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36mcom.chatapp:chatapp-backend[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding chatapp-backend 0.1.0[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:resources[m [1m(default-resources)[m @ [36mchatapp-backend[0;1m ---[m
+[[1;34mINFO[m] Copying 1 resource from src/main/resources to target/classes
+[[1;34mINFO[m] Copying 6 resources from src/main/resources to target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.13.0:compile[m [1m(default-compile)[m @ [36mchatapp-backend[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:testResources[m [1m(default-testResources)[m @ [36mchatapp-backend[0;1m ---[m
+[[1;34mINFO[m] Copying 2 resources from src/test/resources to target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.13.0:testCompile[m [1m(default-testCompile)[m @ [36mchatapp-backend[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.2.5:test[m [1m(default-test)[m @ [36mchatapp-backend[0;1m ---[m
+[[1;34mINFO[m] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running com.chatapp.websocket.[1mChatWebSocketIntegrationTest[m
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+12:31:43.355 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.chatapp.websocket.ChatWebSocketIntegrationTest]: ChatWebSocketIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:31:44.181 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.chatapp.ChatAppApplication for test class com.chatapp.websocket.ChatWebSocketIntegrationTest
+12:31:45.003 [main] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+12:31:45.023 [main] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+12:31:45.159 [main] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 1.20.3
+12:31:45.979 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+12:31:48.218 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+12:31:48.225 [main] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+12:31:48.318 [main] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+  Server Version: 29.1.3
+  API Version: 1.52
+  Operating System: Linux Mint 21.3
+  Total Memory: 3790 MB
+12:31:48.965 [main] INFO tc.testcontainers/ryuk:0.9.0 -- Creating container for image: testcontainers/ryuk:0.9.0
+12:31:48.982 [main] INFO org.testcontainers.utility.RegistryAuthLocator -- Failure when attempting to lookup auth config. Please ignore if you don't have images in an authenticated registry. Details: (dockerImageName: testcontainers/ryuk:0.9.0, configFile: /home/gowtham/.docker/config.json, configEnv: DOCKER_AUTH_CONFIG). Falling back to docker-java default behaviour. Exception message: Status 404: No config supplied. Checked in order: /home/gowtham/.docker/config.json (file not found), DOCKER_AUTH_CONFIG (not set)
+12:31:51.064 [main] INFO tc.testcontainers/ryuk:0.9.0 -- Container testcontainers/ryuk:0.9.0 is starting: 17c127a024ea7b5d6b8720a8663da3e6b08a13fdd8723b0e9c23f9e23ed61f20
+12:31:53.288 [main] INFO tc.testcontainers/ryuk:0.9.0 -- Container testcontainers/ryuk:0.9.0 started in PT4.322111754S
+12:31:53.307 [main] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+12:31:53.308 [main] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+12:31:53.310 [main] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+12:31:53.312 [main] INFO tc.postgres:16-alpine -- Creating container for image: postgres:16-alpine
+12:31:54.809 [main] INFO tc.postgres:16-alpine -- Container postgres:16-alpine is starting: 9f6c8b083388a5896b18b95851d8ef9e95650f012aef816c43970ae3a297ef71
+12:32:01.563 [main] INFO tc.postgres:16-alpine -- Container postgres:16-alpine started in PT8.251643894S
+12:32:01.565 [main] INFO tc.postgres:16-alpine -- Container is started (JDBC URL: jdbc:postgresql://localhost:32814/chatapp_test?loggerLevel=OFF)
+12:32:01.571 [main] INFO tc.redis:7-alpine -- Creating container for image: redis:7-alpine
+12:32:03.860 [main] INFO tc.redis:7-alpine -- Container redis:7-alpine is starting: 2d15213dda4a07c0b244df52d50c05a4b1380874cf5630d6dbdb08d3303f615e
+12:32:05.443 [main] INFO tc.redis:7-alpine -- Container redis:7-alpine started in PT3.871755514S
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2026-08-19T12:32:07.188+05:30  INFO 20852 --- [chatapp-backend] [           main] c.c.w.ChatWebSocketIntegrationTest       : Starting ChatWebSocketIntegrationTest using Java 21.0.11 with PID 20852 (started by gowtham in /home/gowtham/Documents/chatapp/backend)
+2026-08-19T12:32:07.208+05:30  INFO 20852 --- [chatapp-backend] [           main] c.c.w.ChatWebSocketIntegrationTest       : The following 1 profile is active: "test"
+2026-08-19T12:32:14.712+05:30  INFO 20852 --- [chatapp-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-19T12:32:14.720+05:30  INFO 20852 --- [chatapp-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-19T12:32:15.371+05:30  INFO 20852 --- [chatapp-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 592 ms. Found 9 JPA repository interfaces.
+2026-08-19T12:32:15.441+05:30  INFO 20852 --- [chatapp-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-19T12:32:15.447+05:30  INFO 20852 --- [chatapp-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-19T12:32:15.520+05:30  INFO 20852 --- [chatapp-backend] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chatapp.conversation.repository.ConversationParticipantRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-19T12:32:15.522+05:30  INFO 20852 --- [chatapp-backend] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chatapp.conversation.repository.ConversationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-19T12:32:15.523+05:30  INFO 20852 --- [chatapp-backend] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chatapp.message.repository.MessageReceiptRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-19T12:32:15.525+05:30  INFO 20852 --- [chatapp-backend] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chatapp.message.repository.MessageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-19T12:32:15.528+05:30  INFO 20852 --- [chatapp-backend] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chatapp.moderation.repository.ReportRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-19T12:32:15.531+05:30  INFO 20852 --- [chatapp-backend] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chatapp.moderation.repository.UserBlockRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-19T12:32:15.533+05:30  INFO 20852 --- [chatapp-backend] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chatapp.notification.repository.NotificationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-19T12:32:15.535+05:30  INFO 20852 --- [chatapp-backend] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chatapp.user.repository.RefreshTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-19T12:32:15.546+05:30  INFO 20852 --- [chatapp-backend] [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chatapp.user.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-08-19T12:32:15.548+05:30  INFO 20852 --- [chatapp-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 0 Redis repository interfaces.
+2026-08-19T12:32:21.021+05:30  INFO 20852 --- [chatapp-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-08-19T12:32:21.067+05:30  INFO 20852 --- [chatapp-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-19T12:32:21.070+05:30  INFO 20852 --- [chatapp-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-08-19T12:32:21.336+05:30  INFO 20852 --- [chatapp-backend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-19T12:32:21.349+05:30  INFO 20852 --- [chatapp-backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13972 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2026-08-19T12:32:24.817+05:30  INFO 20852 --- [chatapp-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-19T12:32:25.624+05:30  INFO 20852 --- [chatapp-backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ba015b1
+2026-08-19T12:32:25.631+05:30  INFO 20852 --- [chatapp-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-19T12:32:25.773+05:30  INFO 20852 --- [chatapp-backend] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:32814/chatapp_test (PostgreSQL 16.15)
+2026-08-19T12:32:25.964+05:30  INFO 20852 --- [chatapp-backend] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-08-19T12:32:25.986+05:30  INFO 20852 --- [chatapp-backend] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.095s)
+2026-08-19T12:32:26.043+05:30  INFO 20852 --- [chatapp-backend] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2026-08-19T12:32:26.261+05:30  INFO 20852 --- [chatapp-backend] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2026-08-19T12:32:26.281+05:30  INFO 20852 --- [chatapp-backend] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - extensions"
+2026-08-19T12:32:26.481+05:30  INFO 20852 --- [chatapp-backend] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - init users"
+2026-08-19T12:32:26.642+05:30  INFO 20852 --- [chatapp-backend] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - conversations"
+2026-08-19T12:32:26.751+05:30  INFO 20852 --- [chatapp-backend] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - messages"
+2026-08-19T12:32:26.889+05:30  INFO 20852 --- [chatapp-backend] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "5 - moderation"
+2026-08-19T12:32:27.016+05:30  INFO 20852 --- [chatapp-backend] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "6 - notifications"
+2026-08-19T12:32:27.091+05:30  INFO 20852 --- [chatapp-backend] [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 6 migrations to schema "public", now at version v6 (execution time 00:00.413s)
+2026-08-19T12:32:27.644+05:30  INFO 20852 --- [chatapp-backend] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-19T12:32:27.942+05:30  INFO 20852 --- [chatapp-backend] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-08-19T12:32:28.076+05:30  INFO 20852 --- [chatapp-backend] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-08-19T12:32:29.337+05:30  INFO 20852 --- [chatapp-backend] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-19T12:32:35.372+05:30  INFO 20852 --- [chatapp-backend] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19T12:32:35.593+05:30  INFO 20852 --- [chatapp-backend] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-19T12:32:37.826+05:30  INFO 20852 --- [chatapp-backend] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-19T12:32:47.100+05:30  WARN 20852 --- [chatapp-backend] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1a8a94ad-3d4b-41ff-823f-2a04d45caeac
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-08-19T12:32:47.129+05:30  INFO 20852 --- [chatapp-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-08-19T12:32:47.565+05:30 DEBUG 20852 --- [chatapp-backend] [           main] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws/**, /ws-raw] in 'stompWebSocketHandlerMapping'
+2026-08-19T12:32:48.788+05:30  INFO 20852 --- [chatapp-backend] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-08-19T12:32:49.371+05:30 DEBUG 20852 --- [chatapp-backend] [           main] .WebSocketAnnotationMethodMessageHandler : 
+	c.c.a.c.AnonymousChatController:
+	
+2026-08-19T12:32:49.397+05:30 DEBUG 20852 --- [chatapp-backend] [           main] .WebSocketAnnotationMethodMessageHandler : 
+	c.c.a.c.AnonymousWebSocketController:
+	{[MESSAGE],[/anon.send]}: send(AnonymousSendRequest,SimpMessageHeaderAccessor)
+	{[MESSAGE],[/anon.typing]}: typing(AnonymousTypingRequest,SimpMessageHeaderAccessor)
+2026-08-19T12:32:49.399+05:30 DEBUG 20852 --- [chatapp-backend] [           main] .WebSocketAnnotationMethodMessageHandler : 
+	c.c.a.c.AuthController:
+	
+2026-08-19T12:32:49.400+05:30 DEBUG 20852 --- [chatapp-backend] [           main] .WebSocketAnnotationMethodMessageHandler : 
+	c.c.c.c.ConversationController:
+	
+2026-08-19T12:32:49.401+05:30 DEBUG 20852 --- [chatapp-backend] [           main] .WebSocketAnnotationMethodMessageHandler : 
+	c.c.m.c.MessageController:
+	
+2026-08-19T12:32:49.402+05:30 DEBUG 20852 --- [chatapp-backend] [           main] .WebSocketAnnotationMethodMessageHandler : 
+	c.c.m.c.ModerationController:
+	
+2026-08-19T12:32:49.402+05:30 DEBUG 20852 --- [chatapp-backend] [           main] .WebSocketAnnotationMethodMessageHandler : 
+	c.c.n.c.NotificationController:
+	
+2026-08-19T12:32:49.403+05:30 DEBUG 20852 --- [chatapp-backend] [           main] .WebSocketAnnotationMethodMessageHandler : 
+	c.c.s.StorageController:
+	
+2026-08-19T12:32:49.404+05:30 DEBUG 20852 --- [chatapp-backend] [           main] .WebSocketAnnotationMethodMessageHandler : 
+	c.c.u.c.UserController:
+	
+2026-08-19T12:32:49.406+05:30 DEBUG 20852 --- [chatapp-backend] [           main] .WebSocketAnnotationMethodMessageHandler : 
+	c.c.w.ChatWebSocketController:
+	{[MESSAGE],[/chat.read]}: read(UUID,SimpMessageHeaderAccessor)
+	{[MESSAGE],[/presence.heartbeat]}: heartbeat(SimpMessageHeaderAccessor)
+	{[MESSAGE],[/chat.typing]}: typing(TypingEvent,SimpMessageHeaderAccessor)
+	{[MESSAGE],[/chat.send]}: sendMessage(SendMessageRequest,SimpMessageHeaderAccessor)
+	{[MESSAGE],[/chat.delivered]}: delivered(UUID,SimpMessageHeaderAccessor)
+2026-08-19T12:32:49.408+05:30 DEBUG 20852 --- [chatapp-backend] [           main] .WebSocketAnnotationMethodMessageHandler : 
+	c.c.w.StompExceptionHandler:
+	
+2026-08-19T12:32:49.411+05:30 DEBUG 20852 --- [chatapp-backend] [           main] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2026-08-19T12:32:52.351+05:30  INFO 20852 --- [chatapp-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 39171 (http) with context path '/'
+2026-08-19T12:32:52.361+05:30 DEBUG 20852 --- [chatapp-backend] [           main] o.s.m.s.ExecutorSubscribableChannel      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2026-08-19T12:32:52.364+05:30 DEBUG 20852 --- [chatapp-backend] [           main] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2026-08-19T12:32:52.365+05:30  INFO 20852 --- [chatapp-backend] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-08-19T12:32:52.370+05:30 DEBUG 20852 --- [chatapp-backend] [           main] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2b102cdf]
+2026-08-19T12:32:52.370+05:30 DEBUG 20852 --- [chatapp-backend] [           main] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2b102cdf]
+2026-08-19T12:32:52.372+05:30  INFO 20852 --- [chatapp-backend] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2b102cdf]]
+2026-08-19T12:32:52.373+05:30  INFO 20852 --- [chatapp-backend] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-08-19T12:32:52.374+05:30 DEBUG 20852 --- [chatapp-backend] [           main] o.s.m.s.ExecutorSubscribableChannel      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2026-08-19T12:32:52.375+05:30 DEBUG 20852 --- [chatapp-backend] [           main] o.s.m.s.ExecutorSubscribableChannel      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2026-08-19T12:32:52.453+05:30  INFO 20852 --- [chatapp-backend] [           main] c.c.w.ChatWebSocketIntegrationTest       : Started ChatWebSocketIntegrationTest in 46.915 seconds (process running for 72.406)
+WARNING: A Java agent has been loaded dynamically (/home/gowtham/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.19/byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-08-19T12:32:55.603+05:30  INFO 20852 --- [chatapp-backend] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19T12:32:55.604+05:30  INFO 20852 --- [chatapp-backend] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-19T12:32:55.618+05:30  INFO 20852 --- [chatapp-backend] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2026-08-19T12:33:00.126+05:30 DEBUG 20852 --- [chatapp-backend] [           main] o.s.w.s.c.s.StandardWebSocketClient      : Connecting to ws://localhost:39171/ws-raw
+2026-08-19T12:33:00.220+05:30 DEBUG 20852 --- [chatapp-backend] [o-auto-1-exec-4] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@2c5f3b12
+2026-08-19T12:33:00.225+05:30 DEBUG 20852 --- [chatapp-backend] [o-auto-1-exec-4] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /ws-raw
+2026-08-19T12:33:00.313+05:30 DEBUG 20852 --- [chatapp-backend] [o-auto-1-exec-4] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=3b4a3057-3256-f9b1-bff3-6a0148cad26b, uri=ws://localhost:39171/ws-raw]
+2026-08-19T12:33:00.317+05:30 DEBUG 20852 --- [chatapp-backend] [cTaskExecutor-1] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=c999fa75-5509-8bd2-dcf8-05daf2f8dad7, uri=null]
+2026-08-19T12:33:00.319+05:30 DEBUG 20852 --- [chatapp-backend] [cTaskExecutor-1] o.s.m.simp.stomp.DefaultStompSession     : Connection established in session id=468d921f-f4e5-0d49-aece-7aa9373a56b6
+2026-08-19T12:33:00.390+05:30 DEBUG 20852 --- [chatapp-backend] [nboundChannel-2] o.s.m.s.b.SimpleBrokerMessageHandler     : Processing CONNECT user=b7f13952-9918-4624-aa41-95ee40176e5c session=3b4a3057-3256-f9b1-bff3-6a0148cad26b
+2026-08-19T12:33:00.437+05:30 DEBUG 20852 --- [chatapp-backend] [tboundChannel-1] o.s.m.s.b.SimpleBrokerMessageHandler     : Processing MESSAGE destination=/topic/presence/b7f13952-9918-4624-aa41-95ee40176e5c session=null payload={"userId":"b7f13952-9918-4624-aa41-95ee40176e5c","online":true}
+2026-08-19T12:33:00.656+05:30 DEBUG 20852 --- [chatapp-backend] [           main] o.s.w.s.c.s.StandardWebSocketClient      : Connecting to ws://localhost:39171/ws-raw
+2026-08-19T12:33:00.677+05:30 DEBUG 20852 --- [chatapp-backend] [o-auto-1-exec-6] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@2c5f3b12
+2026-08-19T12:33:00.680+05:30 DEBUG 20852 --- [chatapp-backend] [o-auto-1-exec-6] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /ws-raw
+2026-08-19T12:33:00.695+05:30 DEBUG 20852 --- [chatapp-backend] [cTaskExecutor-1] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=f6128bca-2be8-a58d-e2d7-12db834647d0, uri=null]
+2026-08-19T12:33:00.695+05:30 DEBUG 20852 --- [chatapp-backend] [cTaskExecutor-1] o.s.m.simp.stomp.DefaultStompSession     : Connection established in session id=65cdd99a-47b9-6e16-c16e-d9dd9f1f4957
+2026-08-19T12:33:00.701+05:30 DEBUG 20852 --- [chatapp-backend] [o-auto-1-exec-6] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=84e6aefb-007a-3f29-7001-2f061a0beaf4, uri=ws://localhost:39171/ws-raw]
+2026-08-19T12:33:00.712+05:30 DEBUG 20852 --- [chatapp-backend] [nboundChannel-1] o.s.m.s.b.SimpleBrokerMessageHandler     : Processing CONNECT user=055d7687-7beb-4645-8c36-5c9e1a634ae4 session=84e6aefb-007a-3f29-7001-2f061a0beaf4
+2026-08-19T12:33:00.728+05:30 DEBUG 20852 --- [chatapp-backend] [tboundChannel-2] o.s.m.s.b.SimpleBrokerMessageHandler     : Processing MESSAGE destination=/topic/presence/055d7687-7beb-4645-8c36-5c9e1a634ae4 session=null payload={"userId":"055d7687-7beb-4645-8c36-5c9e1a634ae4","online":true}
+2026-08-19T12:33:00.950+05:30 DEBUG 20852 --- [chatapp-backend] [nboundChannel-2] o.s.m.s.b.SimpleBrokerMessageHandler     : Processing SUBSCRIBE destination=/queue/messages-user84e6aefb-007a-3f29-7001-2f061a0beaf4 subscriptionId=0 session=84e6aefb-007a-3f29-7001-2f061a0beaf4 user=055d7687-7beb-4645-8c36-5c9e1a634ae4 payload=byte[0]
+2026-08-19T12:33:01.267+05:30 DEBUG 20852 --- [chatapp-backend] [nboundChannel-1] .WebSocketAnnotationMethodMessageHandler : Searching methods to handle SEND /app/chat.send session=3b4a3057-3256-f9b1-bff3-6a0148cad26b application/json payload={"conversationId":"09aca4d2-914d-41e5-9912-2a8191e1b75c","content":"Hello from A...(truncated), lookupDestination='/chat.send'
+2026-08-19T12:33:01.281+05:30 DEBUG 20852 --- [chatapp-backend] [nboundChannel-1] .WebSocketAnnotationMethodMessageHandler : Invoking ChatWebSocketController#sendMessage[2 args]
+2026-08-19T12:33:01.622+05:30 DEBUG 20852 --- [chatapp-backend] [nboundChannel-1] o.s.m.s.b.SimpleBrokerMessageHandler     : Processing MESSAGE destination=/queue/messages-user3b4a3057-3256-f9b1-bff3-6a0148cad26b session=null payload={"id":"6c6fbc67-e246-48a5-9c2a-f0d75c1a579d","conversationId":"09aca4d2-914d-41e...(truncated)
+2026-08-19T12:33:01.628+05:30 DEBUG 20852 --- [chatapp-backend] [nboundChannel-1] o.s.m.s.b.SimpleBrokerMessageHandler     : Processing MESSAGE destination=/queue/messages-user84e6aefb-007a-3f29-7001-2f061a0beaf4 session=null payload={"id":"6c6fbc67-e246-48a5-9c2a-f0d75c1a579d","conversationId":"09aca4d2-914d-41e...(truncated)
+2026-08-19T12:33:01.629+05:30 DEBUG 20852 --- [chatapp-backend] [nboundChannel-1] o.s.m.s.b.SimpleBrokerMessageHandler     : Broadcasting to 1 sessions.
+2026-08-19T12:33:06.606+05:30 DEBUG 20852 --- [chatapp-backend] [           main] o.s.w.s.c.s.StandardWebSocketClient      : Connecting to ws://localhost:39171/ws
+2026-08-19T12:33:06.627+05:30 DEBUG 20852 --- [chatapp-backend] [o-auto-1-exec-9] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@332c8e2c
+2026-08-19T12:33:06.633+05:30 DEBUG 20852 --- [chatapp-backend] [o-auto-1-exec-9] o.s.w.s.s.t.h.DefaultSockJsService       : Processing transport request: GET http://localhost:39171/ws
+2026-08-19T12:33:06.641+05:30 DEBUG 20852 --- [chatapp-backend] [cTaskExecutor-1] o.s.m.simp.stomp.DefaultStompSession     : Failed to connect session id=65d52217-4f80-07ef-25c6-bbb6d9aef268
+
+java.util.concurrent.CompletionException: jakarta.websocket.DeploymentException: The HTTP response from the server [400] did not permit the HTTP upgrade to WebSocket
+	at org.springframework.util.concurrent.FutureUtils.lambda$toSupplier$0(FutureUtils.java:78) ~[spring-core-6.1.13.jar:6.1.13]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: jakarta.websocket.DeploymentException: The HTTP response from the server [400] did not permit the HTTP upgrade to WebSocket
+	at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServerRecursive(WsWebSocketContainer.java:384) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketContainer.java:179) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.springframework.web.socket.client.standard.StandardWebSocketClient.lambda$executeInternal$0(StandardWebSocketClient.java:175) ~[spring-websocket-6.1.13.jar:6.1.13]
+	at org.springframework.util.concurrent.FutureUtils.lambda$toSupplier$0(FutureUtils.java:74) ~[spring-core-6.1.13.jar:6.1.13]
+	... 2 common frames omitted
+
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m2[m, [1;31mFailures: [0;1;31m1[m, Errors: 0, Skipped: 0, Time elapsed: 84.23 s[1;31m <<< FAILURE![m -- in com.chatapp.websocket.[1mChatWebSocketIntegrationTest[m
+[[1;31mERROR[m] com.chatapp.websocket.ChatWebSocketIntegrationTest.twoUsers_canExchangeRealTimeMessage -- Time elapsed: 13.60 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual not to be null
+	at com.chatapp.websocket.ChatWebSocketIntegrationTest.twoUsers_canExchangeRealTimeMessage(ChatWebSocketIntegrationTest.java:89)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+2026-08-19T12:33:06.875+05:30 DEBUG 20852 --- [chatapp-backend] [ionShutdownHook] o.s.m.s.ExecutorSubscribableChannel      : clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2026-08-19T12:33:06.879+05:30 DEBUG 20852 --- [chatapp-backend] [ionShutdownHook] o.s.w.s.adapter.NativeWebSocketSession   : Closing StandardWebSocketSession[id=3b4a3057-3256-f9b1-bff3-6a0148cad26b, uri=ws://localhost:39171/ws-raw]
+2026-08-19T12:33:06.884+05:30 DEBUG 20852 --- [chatapp-backend] [lient-AsyncIO-3] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=c999fa75-5509-8bd2-dcf8-05daf2f8dad7, uri=null] closed with CloseStatus[code=1001, reason=null]
+2026-08-19T12:33:06.885+05:30 DEBUG 20852 --- [chatapp-backend] [lient-AsyncIO-3] o.s.m.simp.stomp.DefaultStompSession     : Connection closed in session id=468d921f-f4e5-0d49-aece-7aa9373a56b6
+2026-08-19T12:33:06.886+05:30 DEBUG 20852 --- [chatapp-backend] [lient-AsyncIO-3] o.s.w.s.adapter.NativeWebSocketSession   : Closing StandardWebSocketSession[id=c999fa75-5509-8bd2-dcf8-05daf2f8dad7, uri=null]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  ChatWebSocketIntegrationTest.twoUsers_canExchangeRealTimeMessage:89 
+Expecting actual not to be null[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 2, Failures: 1, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  01:35 min
+[[1;34mINFO[m] Finished at: 2026-08-19T12:33:07+05:30
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:3.2.5:test[m [1m(default-test)[m on project [36mchatapp-backend[m: [1;31mThere are test failures.[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease refer to /home/gowtham/Documents/chatapp/backend/target/surefire-reports for the individual test results.[m
+[[1;31mERROR[m] [1;31mPlease refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

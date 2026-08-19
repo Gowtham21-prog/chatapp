@@ -1,0 +1,5 @@
+/home/gowtham/Documents/chatapp/backend/src/test/java/com/chatapp/IntegrationTestBase.java
+/home/gowtham/Documents/chatapp/backend/src/test/java/com/chatapp/anonymous/AnonymousMatchmakingIntegrationTest.java
+/home/gowtham/Documents/chatapp/backend/src/test/java/com/chatapp/auth/AuthFlowIntegrationTest.java
+/home/gowtham/Documents/chatapp/backend/src/test/java/com/chatapp/message/service/MessageServiceTest.java
+/home/gowtham/Documents/chatapp/backend/src/test/java/com/chatapp/websocket/ChatWebSocketIntegrationTest.java

@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-surface-light text-gray-900 antialiased transition-colors duration-300;
+    font-family: "Inter", system-ui, sans-serif;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  body.dark,
+  html.dark body {
+    @apply bg-surface-dark text-gray-100;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-brand-200 rounded-full;
+  }
+  .dark .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full;
+  }
+
+  /* Animated aurora backdrop used behind auth screens and the chat shell */
+  .aurora-bg {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+  .aurora-bg::before,
+  .aurora-bg::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 9999px;
+    filter: blur(90px);
+    opacity: 0.55;
+  }
+  .aurora-bg::before {
+    width: 55vmax;
+    height: 55vmax;
+    top: -20vmax;
+    left: -15vmax;
+    background: radial-gradient(circle at 30% 30%, #7c4dff, transparent 70%);
+    animation: float-slow 12s ease-in-out infinite;
+  }
+  .aurora-bg::after {
+    width: 50vmax;
+    height: 50vmax;
+    bottom: -20vmax;
+    right: -15vmax;
+    background: radial-gradient(circle at 70% 70%, #22e8d8, transparent 70%);
+    animation: float-slower 16s ease-in-out infinite;
+  }
+  .dark .aurora-bg::before {
+    opacity: 0.35;
+  }
+  .dark .aurora-bg::after {
+    opacity: 0.28;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl ring-1 ring-white/60;
+  }
+  .dark .glass {
+    @apply bg-white/[0.04] ring-1 ring-white/10;
+  }
+
+  .glass-strong {
+    @apply bg-white/90 backdrop-blur-xl ring-1 ring-white/70;
+  }
+  .dark .glass-strong {
+    @apply bg-surface-darkcard/90 ring-1 ring-white/10;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-500 via-accent-pink to-accent-cyan bg-clip-text text-transparent bg-300% animate-gradient-shift;
+  }
+
+  .shimmer-surface {
+    background: linear-gradient(
+      110deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.5) 50%,
+      transparent 70%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2.5s linear infinite;
+  }
+  .dark .shimmer-surface {
+    background: linear-gradient(
+      110deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.08) 50%,
+      transparent 70%
+    );
+    background-size: 200% 100%;
+  }
+}
